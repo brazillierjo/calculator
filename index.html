@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme='light'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="#" />
+  <script src="https://kit.fontawesome.com/c5914ea3e5.js" crossorigin="anonymous"></script>
+  <title>Calculator with dark and light mode</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="heading">
+      <span>Calculette</span>
+      <span>
+        <label>
+          <input type="checkbox" name="theme" id="checkbox">
+          <span class="btn"></span>
+          <i class="fas fa-moon"></i>
+        </label>
+      </span>
+    </div>
+    <div class="result">
+      <div class="history">
+        <p class="upper-value"></p>
+      </div>
+      <div class="output">
+        <p class="lower-value"></p>
+      </div>
+    </div>
+    <div id="keyboard">
+      <div class="group">
+        <div class="top-section">
+          <button class="operator" id="clear">C</button>
+          <button class="operator" id="backspace"><i class="fas fa-backspace"></i></button>
+          <button class="operator" id="%">%</button>
+        </div>
+        <div class="div middle-section">
+          <div>
+            <button class="number" id="7">7</button>
+            <button class="number" id="8">8</button>
+            <button class="number" id="9">9</button>
+          </div>
+          <div>
+            <button class="number" id="4">4</button>
+            <button class="number" id="5">5</button>
+            <button class="number" id="6">6</button>
+          </div>
+          <div>
+            <button class="number" id="1">1</button>
+            <button class="number" id="2">2</button>
+            <button class="number" id="3">3</button>
+          </div>
+          <div>
+            <button class="number" id="00">00</button>
+            <button class="number" id="0">0</button>
+            <button class="operator" id=".">.</button>
+          </div>
+        </div>
+      </div>
+      <div class="side-section">
+        <button class="operator" id="/">/</button>
+        <button class="operator" id="*">x</button>
+        <button class="operator" id="-">-</button>
+        <button class="operator" id="+">+</button>
+        <button class="operator equal" id="=">=</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="effect.js"></script>
+</body>
+
+</html>
